@@ -7,19 +7,19 @@ from discord.ext.commands import has_permissions, MissingPermissions
 
 # Config Kısmı
 
-token             = 'MTAxMTg0NDY2NzMzMzE2OTIwMw.GplePS.u_KenJaFpOl5s2KcDK6WCAtKfzHW9i6wF4hmSs'
-prefix            = '!'
-logkanali         = '958459670144622642' # kanal id
-giriskanali       = '958459670144622642' # kanal id
-cikiskanali       = '958459670144622642' # kanal id
-kayıtsız          = '🧝‍♂️・Orta Dünya Halkı' # Rol adı
-whitelist         = '⚡・𝖘𝖎𝖓𝖉𝖆𝖗𝖎𝖓' # Rol adı
-lady              = '⚡・𝖘𝖎𝖓𝖉𝖆𝖗' # Rol adı
-staffl1           = 'Staff L1' # Rol adı
-tsip              = 'https://discord.gg/ABvaqkdc'
-serverip          = 'https://www.twitch.tv/aendirr'
-seskanalı        = '1058255227150684190'
-discordurl        = 'https://discord.gg/ABvaqkdc'
+token             = ''
+prefix            = ''
+logkanali         = '' # kanal id
+giriskanali       = '' # kanal id
+cikiskanali       = '' # kanal id
+kayıtsız          = '' # Rol adı
+whitelist         = '' # Rol adı
+lady              = '' # Rol adı
+staffl1           = ' ' # Rol adı
+tsip              = ''
+serverip          = ''
+seskanalı        = ''
+discordurl        = ''
 aktifimage    = 'https://media.discordapp.net/attachments/1057034791511400529/1060148210137563177/aendirlogo5.png?width=685&height=671'
 restartimage  = 'https://media.discordapp.net/attachments/1057034791511400529/1060148210137563177/aendirlogo5.png?width=685&height=671'
 bakımimage    = 'https://media.discordapp.net/attachments/1057034791511400529/1060148210137563177/aendirlogo5.png?width=685&height=671'
@@ -173,36 +173,9 @@ async def karı(ctx, user: discord.Member):
     channel = client.get_channel(int(logkanali))
     await channel.send(f"<@!{ctx.author.id}> isimli yetkili , {user.mention} isimli Oyuncuya {rol.name} permi verdi!")
 
-# pd Perm Ver Komutu
-#@client.command(pass_context=True)
-#@has_permissions(manage_nicknames=True)
-#@has_permissions(kick_members=True)
-#async def pd(ctx, user: discord.Member):
-#    rol = discord.utils.get(ctx.guild.roles, name=policedp)
-#    await user.add_roles(rol)
-#    await ctx.message.add_reaction(u"✅")
-#    channel = client.get_channel(int(logkanali))
-#    await channel.send(f"<@!{ctx.author.id}> isimli yetkili , {user.mention} isimli Oyuncuya {rol.name} permi verdi!") 
 
 
-
-# pdchef Perm Ver Komutu
-#@client.command(pass_context=True)
-#@has_permissions(manage_nicknames=True)
-#@has_permissions(kick_members=True)
-#async def chef(ctx, user: discord.Member):
-#    rol = discord.utils.get(ctx.guild.roles, name=chef)
-#    await user.add_roles(rol)
-#    await ctx.message.add_reaction(u"✅")
-#    channel = client.get_channel(int(logkanali))
-#    await channel.send(f"<@!{ctx.author.id}> isimli yetkili , {user.mention} isimli Oyuncuya {rol.name} permi verdi!")
-
-
-# sdsheriff Perm Ver Komutu
-#
-
-# sd Perm Ver Komutu
-#      
+    
 
 #Avatar Komutu
 @client.command()
